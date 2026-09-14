@@ -12,7 +12,7 @@ const api = axios.create({ baseURL: '/api' });
 // ── Thoughts ────────────────────────────────────────────────────────────────
 
 /** Returns { thoughts, total, page, limit, total_pages } */
-export const getThoughts = (page = 1, limit = 4) =>
+export const getThoughts = (page = 1, limit = 10) =>
   api.get(`/thoughts?page=${page}&limit=${limit}`).then((r) => r.data);
 
 export const getThoughtById = (id) =>

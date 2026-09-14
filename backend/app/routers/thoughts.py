@@ -23,7 +23,7 @@ router = APIRouter(prefix="/api/thoughts", tags=["thoughts"])
 @router.get("", response_model=PaginatedThoughtsResponse)
 def list_thoughts(
     page: int = Query(1, ge=1, description="Page number (1-indexed)"),
-    limit: int = Query(4, ge=1, le=100, description="Thoughts per page"),
+    limit: int = Query(10, ge=1, le=100, description="Thoughts per page"),
     db: Session = Depends(get_db),
 ):
     """Return a paginated list of thoughts, newest first."""

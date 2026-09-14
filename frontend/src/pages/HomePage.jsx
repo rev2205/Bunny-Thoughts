@@ -5,7 +5,7 @@ import ThoughtCard from '../components/ThoughtCard';
 import Pagination from '../components/Pagination';
 import LoadingSpinner from '../components/LoadingSpinner';
 
-const LIMIT = 4;
+const LIMIT = 10;
 
 export default function HomePage() {
   const [data, setData] = useState(null);
