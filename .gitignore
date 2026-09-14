@@ -1,0 +1,75 @@
+# =============================================
+# Bunny Thoughts — .gitignore
+# =============================================
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# pytest / testing
+.pytest_cache/
+.coverage
+htmlcov/
+test_bunny.db
+*.db
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+
+# ----- Node / Frontend -----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+dist/
+dist-ssr/
+*.local
+
+# ----- Environment / Secrets -----
+.env
+.env.*
+!.env.example
+
+# ----- IDEs -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ----- OS -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V4
+.Trashes
+ehthumbs.db
+
+# ----- Logs -----
+*.log
+logs/
+
+# ----- Docker -----
+# Keep docker-compose.yml but ignore local override files
+docker-compose.override.yml

@@ -1,0 +1,10 @@
+{
+  "search_paths": [
+    ".",
+    "backend",
+    "backend/app"
+  ],
+  "site_package_search_path": [
+    "backend/venv/Lib/site-packages"
+  ]
+}
