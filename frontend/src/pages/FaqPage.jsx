@@ -12,19 +12,19 @@ export default function FaqPage() {
           </div>
           <ol className="toc-list">
             <li>
-              <a href="#is-bunny-thoughts-real">Is Bunny Thoughts real?</a>
+              <a href="#is-bunny-thoughts-real">Is bunny real?</a>
             </li>
             <li>
-              <a href="#what-does-bunny-say-in-chinese">What does Bunny Thoughts say in Chinese?</a>
+              <a href="#what-does-bunny-say-in-chinese">What does bunny say in Chinese?</a>
             </li>
             <li>
-              <a href="#what-does-bunny-do-in-the-office">What does Bunny Thoughts do in The Office?</a>
+              <a href="#what-does-bunny-do-in-the-office">What does bunny do in The Office?</a>
             </li>
           </ol>
         </div>
 
         <div className="faq-item" id="is-bunny-thoughts-real">
-          <h3>Is Bunny Thoughts real?</h3>
+          <h3>Is bunny real?</h3>
           <p>
             It is very much real! In Season 3 Episode 24 – The Job (Season 3 finale), Ryan creates a blog for Creed which is a Microsoft Word document. However, later on, the real Creed Thoughts blog was created which was written in character by the same show writers, as a nod to that episode.
           </p>
@@ -34,7 +34,7 @@ export default function FaqPage() {
         </div>
 
         <div className="faq-item" id="what-does-bunny-say-in-chinese">
-          <h3>What does Bunny Thoughts say in Chinese?</h3>
+          <h3>What does bunny say in Chinese?</h3>
           <p>
             In Season 2, Episode 17 of The Office, a notable scene features Creed speaking Mandarin Chinese. He says, &quot;Wah doo zheng hua doo peng yo, nee hao,&quot; which in proper Pinyin is &quot;Wo de zhong guo de peng you, ni hao.&quot; This phrase translates to &quot;My Chinese friends, hello.&quot;
           </p>
@@ -44,7 +44,7 @@ export default function FaqPage() {
         </div>
 
         <div className="faq-item" id="what-does-bunny-do-in-the-office">
-          <h3>What does Bunny Thoughts do in The Office?</h3>
+          <h3>What does bunny do in The Office?</h3>
           <p>
             Creed is in quality assurance, however for a short stint during Season 7, he was acting manager of Dunder Mifflin Scranton. He&#39;s supposed to go to the paper suppliers to make sure the product that they&#39;re receiving meets standards.
           </p>
