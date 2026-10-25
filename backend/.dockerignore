@@ -1,0 +1,48 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+
+# SQLite databases — never ship local data into the image
+*.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Testing files
+tests/
+test_*.py
+
+# Seed / utility scripts (not needed in production)
+seed.py
+
+# Docker & config files (self-referential exclusion)
+Dockerfile
+docker-compose.yml
+
+# IDE / editor / linter config
+pyrefly.json
+pyrightconfig.json
+.vscode/
+.idea/
+
+# Documentation
+*.md
+
+# Git
+.git/
+.gitignore
+
+# OS files
+Thumbs.db
+.DS_Store

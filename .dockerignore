@@ -1,0 +1,52 @@
+# ---- Root-level .dockerignore ----
+# Used when the build context is the project root (e.g., docker-compose)
+
+# Version control
+.git/
+.github/
+
+# Virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Test / lint caches
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+
+# SQLite databases
+*.db
+
+# Secrets
+.env
+**/.env
+!**/.env.example
+
+# Node / Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
+# IDE / editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Documentation (not needed in images)
+*.md
+
+# Linter / type-checker config
+pyrefly.json
+.pyrefly.json
+pyrightconfig.json

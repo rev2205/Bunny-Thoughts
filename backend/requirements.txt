@@ -11,8 +11,3 @@ python-dotenv>=1.0.0
 
 # Validation (FastAPI uses Pydantic v2 by default with modern versions)
 pydantic>=2.4.2
-
-# Testing
-pytest>=7.4.3
-pytest-asyncio>=0.21.1
-httpx2
