@@ -4,11 +4,15 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
+    host: '0.0.0.0',
     port: 5173,
+    watch: {
+      usePolling: true,
+    },
     proxy: {
-      // Forward all /api/* requests to the FastAPI backend
+      // Proxies /api requests to Docker backend service or local fallback
       '/api': {
-        target: 'http://localhost:8000',
+        target: process.env.VITE_BACKEND_URL || 'http://backend:8000',
         changeOrigin: true,
       },
     },

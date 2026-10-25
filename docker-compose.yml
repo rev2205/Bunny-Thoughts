@@ -1,4 +1,19 @@
 services:
+  frontend:
+    build:
+      context: ./frontend
+    container_name: bunny_frontend
+    ports: 
+      - "5173:5173"
+    environment:
+      - VITE_BACKEND_URL=http://backend:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
   backend:
     build:
       context: ./backend
